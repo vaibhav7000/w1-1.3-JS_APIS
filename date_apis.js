@@ -44,15 +44,16 @@ console.log(newDate.toUTCString());
 
 // static methods of the Date class -> now and parse both returns number of milliseconds passed from 1 jan 1970
 console.log(Date.now()); 
-console.log(Date.parse()) // this takes a valid Date string
+console.log(Date.parse()) // this takes a valid Date string like "YYYY-MM-DD" / "YYYY-MM" / "YYYY" or "YYYY-MM-DDTHH:MM:SSZ"
 
 
-// Date format ISO standard
+// Date format ISO standard -> date string format
 // "YYYY-MM-DD" / "YYYY-MM" / "YYYY" -> these formats can be passed to the Date class and will set the date according to this
 // "YYYY-MM-DDTHH:MM:SSZ" // this can also be used to create date object of specific datea and time
 const currentDate2025 = new Date("2025") // 1 JAN 1970 00:00:00 according to the UTC
-console.log(currentDate2025);
-console.log(currentDate2025.getHours())
+console.log("Date methods");
+console.log(currentDate2025.getTime());
+console.log(currentDate2025.getHours()) // 5 because UTC time gets back into UTC+5:30
 
 const currentDate2025_01 = new Date("2025-02");
 console.log(currentDate2025_01);

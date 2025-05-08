@@ -28,3 +28,9 @@ console.log(JSON.parse(jsonString)["firstName"]); // converts the json string in
 // every tech know this format (JSON) => we send JSON format in the form of string and then each format converts that into their valid formats
 // JS uses JSON to deal with JSON format
 // IN this if their is normal JSON (not string) than node JS automatically converts into JS object
+
+// every language know the JSON format and sending string is the easiest way to different tech. / program => sending the JSON in the form of string and each language have apis to convert the JSON string in JSON format and than into their valid format to do the manipulation
+
+// Example JS has JSON class that has methods parse and stringfy that will do the honours.
+// JSON.parse -> converts the JSON string into JS object
+// JSON.parse -> converts the JS object into JSON string and then sending that to different programs
